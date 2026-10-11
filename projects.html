@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · Brandon Marks</title>
+<meta name="description" content="Projects by Brandon Marks, including License Plate Math, a browser puzzle game.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Projects · Brandon Marks">
+<meta property="og:description" content="Projects by Brandon Marks, including License Plate Math, a browser puzzle game.">
+<meta property="og:url" content="https://bdog563.github.io/projects.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script>try { var t = localStorage.getItem('theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&family=Barlow+Condensed:wght@600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="banner short">
+  <svg class="curves" viewBox="0 0 1200 160" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <!-- a wide prior, a likelihood, and the sharper posterior they make -->
+    <path class="prior fill" d="M0 155.7 L10 155.3 L20 154.9 L30 154.4 L40 153.9 L50 153.4 L60 152.8 L70 152.2 L80 151.6 L90 150.9 L100 150.2 L110 149.5 L120 148.7 L130 147.9 L140 147 L150 146.1 L160 145.2 L170 144.2 L180 143.2 L190 142.1 L200 141 L210 139.9 L220 138.7 L230 137.5 L240 136.2 L250 134.9 L260 133.6 L270 132.3 L280 130.9 L290 129.5 L300 128.1 L310 126.7 L320 125.3 L330 123.8 L340 122.4 L350 120.9 L360 119.5 L370 118.1 L380 116.7 L390 115.3 L400 113.9 L410 112.5 L420 111.2 L430 109.9 L440 108.7 L450 107.5 L460 106.4 L470 105.3 L480 104.3 L490 103.3 L500 102.4 L510 101.6 L520 100.9 L530 100.2 L540 99.6 L550 99.1 L560 98.7 L570 98.4 L580 98.2 L590 98 L600 98 L610 98 L620 98.2 L630 98.4 L640 98.7 L650 99.1 L660 99.6 L670 100.2 L680 100.9 L690 101.6 L700 102.4 L710 103.3 L720 104.3 L730 105.3 L740 106.4 L750 107.5 L760 108.7 L770 109.9 L780 111.2 L790 112.5 L800 113.9 L810 115.3 L820 116.7 L830 118.1 L840 119.5 L850 120.9 L860 122.4 L870 123.8 L880 125.3 L890 126.7 L900 128.1 L910 129.5 L920 130.9 L930 132.3 L940 133.6 L950 134.9 L960 136.2 L970 137.5 L980 138.7 L990 139.9 L1000 141 L1010 142.1 L1020 143.2 L1030 144.2 L1040 145.2 L1050 146.1 L1060 147 L1070 147.9 L1080 148.7 L1090 149.5 L1100 150.2 L1110 150.9 L1120 151.6 L1130 152.2 L1140 152.8 L1150 153.4 L1160 153.9 L1170 154.4 L1180 154.9 L1190 155.3 L1200 155.7 L1200 160 L0 160Z"/>
+    <path class="prior line" d="M0 155.7 L10 155.3 L20 154.9 L30 154.4 L40 153.9 L50 153.4 L60 152.8 L70 152.2 L80 151.6 L90 150.9 L100 150.2 L110 149.5 L120 148.7 L130 147.9 L140 147 L150 146.1 L160 145.2 L170 144.2 L180 143.2 L190 142.1 L200 141 L210 139.9 L220 138.7 L230 137.5 L240 136.2 L250 134.9 L260 133.6 L270 132.3 L280 130.9 L290 129.5 L300 128.1 L310 126.7 L320 125.3 L330 123.8 L340 122.4 L350 120.9 L360 119.5 L370 118.1 L380 116.7 L390 115.3 L400 113.9 L410 112.5 L420 111.2 L430 109.9 L440 108.7 L450 107.5 L460 106.4 L470 105.3 L480 104.3 L490 103.3 L500 102.4 L510 101.6 L520 100.9 L530 100.2 L540 99.6 L550 99.1 L560 98.7 L570 98.4 L580 98.2 L590 98 L600 98 L610 98 L620 98.2 L630 98.4 L640 98.7 L650 99.1 L660 99.6 L670 100.2 L680 100.9 L690 101.6 L700 102.4 L710 103.3 L720 104.3 L730 105.3 L740 106.4 L750 107.5 L760 108.7 L770 109.9 L780 111.2 L790 112.5 L800 113.9 L810 115.3 L820 116.7 L830 118.1 L840 119.5 L850 120.9 L860 122.4 L870 123.8 L880 125.3 L890 126.7 L900 128.1 L910 129.5 L920 130.9 L930 132.3 L940 133.6 L950 134.9 L960 136.2 L970 137.5 L980 138.7 L990 139.9 L1000 141 L1010 142.1 L1020 143.2 L1030 144.2 L1040 145.2 L1050 146.1 L1060 147 L1070 147.9 L1080 148.7 L1090 149.5 L1100 150.2 L1110 150.9 L1120 151.6 L1130 152.2 L1140 152.8 L1150 153.4 L1160 153.9 L1170 154.4 L1180 154.9 L1190 155.3 L1200 155.7"/>
+    <path class="like fill" d="M300 160 L310 159.9 L320 159.9 L330 159.9 L340 159.8 L350 159.8 L360 159.7 L370 159.6 L380 159.5 L390 159.4 L400 159.2 L410 158.9 L420 158.6 L430 158.3 L440 157.8 L450 157.3 L460 156.6 L470 155.8 L480 154.8 L490 153.7 L500 152.4 L510 150.8 L520 149 L530 147 L540 144.7 L550 142.1 L560 139.2 L570 136.1 L580 132.6 L590 128.8 L600 124.8 L610 120.5 L620 116 L630 111.4 L640 106.6 L650 101.8 L660 96.9 L670 92.2 L680 87.5 L690 83.1 L700 79 L710 75.3 L720 72 L730 69.2 L740 67 L750 65.3 L760 64.3 L770 64 L780 64.3 L790 65.3 L800 67 L810 69.2 L820 72 L830 75.3 L840 79 L850 83.1 L860 87.5 L870 92.2 L880 96.9 L890 101.8 L900 106.6 L910 111.4 L920 116 L930 120.5 L940 124.8 L950 128.8 L960 132.6 L970 136.1 L980 139.2 L990 142.1 L1000 144.7 L1010 147 L1020 149 L1030 150.8 L1040 152.4 L1050 153.7 L1060 154.8 L1070 155.8 L1080 156.6 L1090 157.3 L1100 157.8 L1110 158.3 L1120 158.6 L1130 158.9 L1140 159.2 L1150 159.4 L1160 159.5 L1170 159.6 L1180 159.7 L1190 159.8 L1200 159.8 L1200 160 L300 160Z"/>
+    <path class="like line" d="M300 160 L310 159.9 L320 159.9 L330 159.9 L340 159.8 L350 159.8 L360 159.7 L370 159.6 L380 159.5 L390 159.4 L400 159.2 L410 158.9 L420 158.6 L430 158.3 L440 157.8 L450 157.3 L460 156.6 L470 155.8 L480 154.8 L490 153.7 L500 152.4 L510 150.8 L520 149 L530 147 L540 144.7 L550 142.1 L560 139.2 L570 136.1 L580 132.6 L590 128.8 L600 124.8 L610 120.5 L620 116 L630 111.4 L640 106.6 L650 101.8 L660 96.9 L670 92.2 L680 87.5 L690 83.1 L700 79 L710 75.3 L720 72 L730 69.2 L740 67 L750 65.3 L760 64.3 L770 64 L780 64.3 L790 65.3 L800 67 L810 69.2 L820 72 L830 75.3 L840 79 L850 83.1 L860 87.5 L870 92.2 L880 96.9 L890 101.8 L900 106.6 L910 111.4 L920 116 L930 120.5 L940 124.8 L950 128.8 L960 132.6 L970 136.1 L980 139.2 L990 142.1 L1000 144.7 L1010 147 L1020 149 L1030 150.8 L1040 152.4 L1050 153.7 L1060 154.8 L1070 155.8 L1080 156.6 L1090 157.3 L1100 157.8 L1110 158.3 L1120 158.6 L1130 158.9 L1140 159.2 L1150 159.4 L1160 159.5 L1170 159.6 L1180 159.7 L1190 159.8 L1200 159.8"/>
+    <path class="post fill" d="M400 160 L410 159.9 L420 159.9 L430 159.8 L440 159.7 L450 159.6 L460 159.3 L470 159 L480 158.6 L490 158 L500 157.2 L510 156 L520 154.6 L530 152.6 L540 150.2 L550 147.1 L560 143.3 L570 138.8 L580 133.3 L590 127 L600 119.8 L610 111.7 L620 102.9 L630 93.4 L640 83.5 L650 73.5 L660 63.6 L670 54.1 L680 45.4 L690 37.8 L700 31.7 L710 27.2 L720 24.6 L730 24 L740 25.4 L750 28.8 L760 34 L770 40.7 L780 48.8 L790 57.8 L800 67.5 L810 77.5 L820 87.5 L830 97.3 L840 106.5 L850 115 L860 122.8 L870 129.6 L880 135.6 L890 140.7 L900 144.9 L910 148.4 L920 151.2 L930 153.5 L940 155.2 L950 156.5 L960 157.5 L970 158.3 L980 158.8 L990 159.2 L1000 159.4 L1010 159.6 L1020 159.8 L1030 159.8 L1040 159.9 L1050 159.9 L1060 160 L1060 160 L400 160Z"/>
+    <path class="post line" d="M400 160 L410 159.9 L420 159.9 L430 159.8 L440 159.7 L450 159.6 L460 159.3 L470 159 L480 158.6 L490 158 L500 157.2 L510 156 L520 154.6 L530 152.6 L540 150.2 L550 147.1 L560 143.3 L570 138.8 L580 133.3 L590 127 L600 119.8 L610 111.7 L620 102.9 L630 93.4 L640 83.5 L650 73.5 L660 63.6 L670 54.1 L680 45.4 L690 37.8 L700 31.7 L710 27.2 L720 24.6 L730 24 L740 25.4 L750 28.8 L760 34 L770 40.7 L780 48.8 L790 57.8 L800 67.5 L810 77.5 L820 87.5 L830 97.3 L840 106.5 L850 115 L860 122.8 L870 129.6 L880 135.6 L890 140.7 L900 144.9 L910 148.4 L920 151.2 L930 153.5 L940 155.2 L950 156.5 L960 157.5 L970 158.3 L980 158.8 L990 159.2 L1000 159.4 L1010 159.6 L1020 159.8 L1030 159.8 L1040 159.9 L1050 159.9 L1060 160"/>
+    <path class="axis" d="M0 159 H1200"/>
+  </svg>
+  <div class="topbar wrap">
+    <a class="brand" href="./"><span class="brand-mark" aria-hidden="true">BM</span><span class="brand-name">Brandon Marks</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="./">About</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+    </nav>
+    <button class="theme-btn" type="button" aria-label="Switch to dark mode">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4 6 18M18 6l1.4-1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <header class="page-head">
+    <h1>Projects</h1>
+    <p>Things I've built. Pick one to try it.</p>
+  </header>
+
+  <ul class="projects">
+    <li>
+      <a class="project" href="https://bdog563.github.io/license-plate-math/">
+        <div class="project-art">
+          <div class="plate" aria-hidden="true">
+            <svg class="plate-sky" viewBox="0 0 300 150" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="lpSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9cdf0"/><stop offset="0.4" stop-color="#cfe2f6"/><stop offset="0.75" stop-color="#e9f1f9"/><stop offset="1" stop-color="#f6f8f6"/></linearGradient>
+                <marker id="lpAx" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#1b2a55" stroke-opacity="0.5" stroke-width="1.6"/></marker>
+                <marker id="lpBlue" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M1 1L8 5L1 9" fill="none" stroke="#3b82c4" stroke-width="2"/></marker>
+                <marker id="lpOrange" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M1 1L8 5L1 9" fill="none" stroke="#d9772a" stroke-width="2"/></marker>
+              </defs>
+              <rect width="300" height="150" fill="#f5f7f3"/>
+              <rect width="300" height="120" fill="url(#lpSky)"/>
+              <circle cx="38" cy="52" r="11" fill="#fde39a" stroke="#d9a72e" stroke-width="1.6"/>
+              <g>
+                <path d="M18 100 Q 34.5 84 51 100 T 84 100 T 117 100 T 150 100 T 183 100 T 216 100 T 249 100 T 282 100 V120 H18Z" fill="#3b82c4" fill-opacity="0.2"/>
+                <path d="M38 120 C 73 120, 85 62, 113 62 S 153 120, 188 120Z" fill="#e0607a" fill-opacity="0.2"/>
+                <path d="M150 120 Q 213 36 276 120Z" fill="#2f9a6a" fill-opacity="0.18"/>
+                <path d="M18 118 C 120 118, 200 112, 268 46 L268 120 H18Z" fill="#e8913a" fill-opacity="0.14"/>
+              </g>
+              <g fill="none" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.8">
+                <path d="M18 100 Q 34.5 84 51 100 T 84 100 T 117 100 T 150 100 T 183 100 T 216 100 T 249 100 T 282 100" stroke="#3b82c4" marker-end="url(#lpBlue)"/>
+                <path d="M38 120 C 73 120, 85 62, 113 62 S 153 120, 188 120" stroke="#e0607a"/>
+                <path d="M150 120 Q 213 36 276 120" stroke="#2f9a6a"/>
+                <path d="M18 118 C 120 118, 200 112, 268 46" stroke="#d9772a" marker-end="url(#lpOrange)"/>
+              </g>
+              <g stroke="#1b2a55" stroke-opacity="0.5" stroke-width="1"><path d="M12 120 H286" marker-end="url(#lpAx)"/><path d="M18 120 V34" marker-end="url(#lpAx)"/></g>
+              <g stroke="#1b2a55" stroke-opacity="0.45" stroke-width="0.9"><path d="M48 118v4M78 118v4M108 118v4M138 118v4M168 118v4M198 118v4M228 118v4M258 118v4"/></g>
+            </svg>
+            <span class="plate-state">Minusota</span>
+            <span class="plate-digits"><span>1</span><span>5</span><span>7</span><span>8</span></span>
+            <span class="plate-motto">Land of 10,000 Plates</span>
+          </div>
+        </div>
+        <div class="project-body">
+          <h2>License Plate Math</h2>
+          <p>A browser puzzle game. You get a license plate's four digits: keep them in order, then add operations and one = sign to make a true equation.</p>
+          <p class="example"><span class="mini-plate">1578</span><span aria-hidden="true">→</span><code>15 = 7 + 8</code></p>
+          <ul class="tags"><li>10,000 plates</li><li>5 levels</li><li>Hints</li><li>Pun states</li></ul>
+          <span class="cta">Play the game <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</main>
+
+<footer class="foot">
+  <div class="wrap">© 2026 Brandon Marks</div>
+</footer>
+<script src="theme.js"></script>
+</body>
+</html>
